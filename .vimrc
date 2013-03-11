@@ -12,7 +12,7 @@ Bundle 'gmarik/vundle'
 " My Bundles
 Bundle 'vim-scripts/phpfolding.vim'
 Bundle 'vim-scripts/errormarker.vim'
-Bundle 'doozr/Xdebug-for-Vim'
+Bundle 'joonty/vim-xdebug.git'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'hallettj/jslint.vim'
 
