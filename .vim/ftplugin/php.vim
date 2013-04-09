@@ -8,6 +8,11 @@ let php_sql_query=1
 let php_htmlInStrings=1
 " }}}
 
+" PHP_CodeSniffer {{{
+" Coding standard to use
+let Vimphpcs_Standard='PEAR'
+" }}}
+
 " Flymake {{{
 setlocal makeprg=$HOME/.vim/bin/vimparse.php\ -c\ %\ $*
 autocmd BufWritePost * silent make
