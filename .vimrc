@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 
 " My Bundles
 Bundle 'vim-scripts/phpfolding.vim'
+Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
 Bundle 'vim-scripts/errormarker.vim'
 Bundle 'bpearson/vim-phpcs'
 Bundle 'joonty/vim-xdebug.git'

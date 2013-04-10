@@ -13,6 +13,17 @@ let php_htmlInStrings=1
 let Vimphpcs_Standard='PEAR'
 " }}}
 
+" phpDocumentor {{{
+inoremap <C-O> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-O> :call PhpDocSingle()<CR>
+vnoremap <C-O> :call PhpDocRange()<CR>
+let g:pdv_cfg_Package = ''
+let g:pdv_cfg_Version = ''
+let g:pdv_cfg_Author = ''
+let g:pdv_cfg_Copyright = ''
+let g:pdv_cfg_License = ''
+" }}}
+
 " Flymake {{{
 setlocal makeprg=$HOME/.vim/bin/vimparse.php\ -c\ %\ $*
 autocmd BufWritePost * silent make
