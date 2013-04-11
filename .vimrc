@@ -16,6 +16,7 @@ Bundle 'vim-scripts/errormarker.vim'
 Bundle 'bpearson/vim-phpcs'
 Bundle 'joonty/vim-xdebug.git'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'ngmy/vim-rubocop'
 Bundle 'hallettj/jslint.vim'
 
 filetype plugin indent on
