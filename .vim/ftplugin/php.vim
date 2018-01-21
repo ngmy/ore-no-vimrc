@@ -46,3 +46,7 @@ set omnifunc=syntaxcomplete#Complete
 " Ctags {{{
 set tags+=php.tags
 " }}}
+
+" vim-ref {{{
+let g:ref_phpmanual_path = $HOME.'/.vim/ref/php-chunked-xhtml'
+" }}}

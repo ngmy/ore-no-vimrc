@@ -169,10 +169,6 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 inoremap <expr><C-p> neocomplete#start_manual_complete()
 " }}}
 
-" vim-ref {{{
-let g:ref_phpmanual_path = $HOME.'/.vim/ref/php-chunked-xhtml'
-" }}}
-
 " plantuml {{{
 let g:plantuml_executable_script = $HOME.'/.vim/bin/plantuml'
 " }}}
