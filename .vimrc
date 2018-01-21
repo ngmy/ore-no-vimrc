@@ -199,3 +199,7 @@ let g:vdebug_options = {
 \    "path_maps" : { '/var/app/src': $HOME.'/localrepos/github.com/WHITEPLUS/lenet' },
 \}
 " }}}
+
+" phpfolding {{{
+let g:DisableAutoPHPFolding = 1
+" }}}
