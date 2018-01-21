@@ -50,3 +50,7 @@ set tags+=php.tags
 " vim-ref {{{
 let g:ref_phpmanual_path = $HOME.'/.vim/ref/php-chunked-xhtml'
 " }}}
+
+"phpfolding {{{
+source $HOME/.vim/bundle/phpfolding.vim/plugin/phpfolding.vim
+" }}}

@@ -10,7 +10,7 @@ call vundle#rc()
 Plugin 'VundleVim/Vundle.vim'
 
 " My Plugins
-"Plugin 'vim-scripts/phpfolding.vim'
+Plugin 'vim-scripts/phpfolding.vim'
 Plugin 'vim-scripts/PDV--phpDocumentor-for-Vim'
 Plugin 'vim-scripts/errormarker.vim'
 "Plugin 'bpearson/16im-phpcs'
