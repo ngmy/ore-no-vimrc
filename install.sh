@@ -20,5 +20,5 @@ fi
 git submodule init
 git submodule update
 
-# Install Bundles
-vim +BundleInstall +qall
+# Install Plugins
+vim +PluginInstall +qall
