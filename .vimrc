@@ -32,7 +32,7 @@ Plugin 'gregsexton/gitv'
 "Plugin 'fatih/vim-go'
 "Plugin 'jodosha/vim-godebug'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'file:///Users/nagamiya/usr/local/src/ijaas'
+Plugin 'file://'.$HOME.'/usr/local/src/ijaas'
 
 filetype plugin indent on
 " }}}
@@ -210,6 +210,6 @@ EOM
 let g:vdebug_options = {
 \    "port" : 10000,
 \    "server" : '192.168.100.92',
-\    "path_maps" : { '/var/app/src': '/Users/nagamiya/localrepos/github.com/WHITEPLUS/lenet' },
+\    "path_maps" : { '/var/app/src': $HOME.'/localrepos/github.com/WHITEPLUS/lenet' },
 \}
 " }}}
