@@ -10,7 +10,7 @@ let php_htmlInStrings=1
 
 " PHP_CodeSniffer {{{
 " Coding standard to use
-let Vimphpcs_Standard='PEAR'
+let Vimphpcs_Standard='PSR2'
 " }}}
 
 " phpDocumentor {{{
@@ -26,8 +26,23 @@ let g:pdv_cfg_License = ''
 
 " Flymake {{{
 setlocal makeprg=$HOME/.vim/bin/vimparse.php\ -c\ %\ $*
-autocmd BufWritePost * silent make
+autocmd BufWritePost <buffer> silent make
 autocmd QuickfixCmdPost make redraw!
 autocmd QuickfixCmdPost make if len(getqflist()) != 0 | copen | endif
 autocmd QuickfixCmdPost make if len(getqflist()) == 0 | cclose | endif
+" }}}
+
+" phpcomplete-extended {{{
+" Composer command name.
+let g:phpcomplete_index_composer_command = 'composer'
+" PHP omni completion.
+"autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+" }}}
+
+" Omni completion {{{
+set omnifunc=syntaxcomplete#Complete
+" }}}
+
+" Ctags {{{
+set tags+=php.tags
 " }}}
