@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/phpfolding.vim'
 Plugin 'vim-scripts/PDV--phpDocumentor-for-Vim'
 Plugin 'vim-scripts/errormarker.vim'
-"Plugin 'bpearson/16im-phpcs'
+Plugin 'bpearson/vim-phpcs'
 Plugin 'joonty/vdebug'
 Plugin 'vim-ruby/vim-ruby'
 "Plugin 'ngmy/vim-rubocop'
@@ -201,4 +201,9 @@ let g:vdebug_options = {
 
 " phpfolding {{{
 let g:DisableAutoPHPFolding = 1
+" }}}
+
+" vim-phpcs {{{
+" Phpcs executable
+let Vimphpcs_Phpcscmd = 'phpcs'
 " }}}

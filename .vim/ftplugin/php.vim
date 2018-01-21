@@ -8,9 +8,9 @@ let php_sql_query=1
 let php_htmlInStrings=1
 " }}}
 
-" PHP_CodeSniffer {{{
+" vim-phpcs {{{
 " Coding standard to use
-let Vimphpcs_Standard='PSR2'
+let Vimphpcs_Standard = 'PSR2'
 " }}}
 
 " phpDocumentor {{{
