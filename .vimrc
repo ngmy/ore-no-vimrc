@@ -178,11 +178,6 @@ let g:plantuml_executable_script = $HOME.'/.vim/bin/plantuml'
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " }}}
 
-" phpcomplete-extended {{{
-" Composer command name.
-let g:phpcomplete_index_composer_command = 'composer'
- " }}}
-
 " Vdebug {{{
 " Use the brew python install
 let s:python_path = system('/usr/local/bin/python -', 'import sys;sys.stdout.write(",".join(sys.path))')
