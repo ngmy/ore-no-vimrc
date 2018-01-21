@@ -88,11 +88,6 @@ match ZenkakuSpace /　/
 set backspace=indent,eol,start
 " }}}
 
-" Ctags {{{
-" Search recursively upwards for the tags file
-set tags+=php.tags;
-" }}}
-
 " Xdebug {{{
 " Listener port
 let g:debuggerPort=10000
