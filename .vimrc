@@ -40,6 +40,9 @@ filetype plugin indent on
 " Enable syntax highlighting
 syntax on
 
+" Syntax highlighting until 200 characters
+set synmaxcol=200 " If a large number, Vim slows down with long lines
+
 " Display line numbers
 set number
 
@@ -53,8 +56,8 @@ set incsearch
 set hlsearch
 
 " Highlighting cursor line
-set cursorline
-set cursorcolumn
+"set cursorline " If enabled, Vim slows down with long lines
+"set cursorcolumn "If enabled, Vim slows down with long lines
 
 " Highlighting more than 80 characters
 if exists('&colorcolumn')
