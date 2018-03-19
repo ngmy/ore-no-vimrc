@@ -31,6 +31,7 @@ Plugin 'gregsexton/gitv'
 "Plugin 'fatih/vim-go'
 "Plugin 'jodosha/vim-godebug'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'StanAngeloff/php.vim'
 Plugin 'file://'.$HOME.'/usr/local/src/ijaas'
 
 filetype plugin indent on
@@ -209,4 +210,17 @@ let g:DisableAutoPHPFolding = 1
 " vim-phpcs {{{
 " Phpcs executable
 let Vimphpcs_Phpcscmd = 'phpcs'
+" }}}
+
+" php.vim {{{
+function! PhpSyntaxOverride()
+  " Put snippet overrides in this function.
+  hi! link phpDocTags phpDefine
+  hi! link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
 " }}}
