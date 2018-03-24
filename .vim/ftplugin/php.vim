@@ -26,10 +26,13 @@ let g:pdv_cfg_License = ''
 
 " Flymake {{{
 setlocal makeprg=$HOME/.vim/bin/vimparse.php\ -c\ %\ $*
-autocmd BufWritePost <buffer> silent make
-autocmd QuickfixCmdPost make redraw!
-autocmd QuickfixCmdPost make if len(getqflist()) != 0 | copen | endif
-autocmd QuickfixCmdPost make if len(getqflist()) == 0 | cclose | endif
+augroup php_vimparse
+  autocmd!
+  autocmd php_vimparse BufWritePost <buffer> silent make
+  autocmd php_vimparse QuickfixCmdPost make redraw!
+  autocmd php_vimparse QuickfixCmdPost make if len(getqflist()) != 0 | copen | endif
+  autocmd php_vimparse QuickfixCmdPost make if len(getqflist()) == 0 | cclose | endif
+augroup END
 " }}}
 
 " phpcomplete-extended {{{
