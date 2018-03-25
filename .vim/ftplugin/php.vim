@@ -28,7 +28,7 @@ let g:pdv_cfg_License = ''
 setlocal makeprg=$HOME/.vim/bin/vimparse.php\ -c\ %\ $*
 augroup php_vimparse
   autocmd!
-  autocmd php_vimparse BufWritePost <buffer> silent make
+  autocmd php_vimparse BufWritePost *.php silent make
   autocmd php_vimparse QuickfixCmdPost make redraw!
   autocmd php_vimparse QuickfixCmdPost make if len(getqflist()) != 0 | copen | endif
   autocmd php_vimparse QuickfixCmdPost make if len(getqflist()) == 0 | cclose | endif
