@@ -10,29 +10,31 @@ call vundle#rc()
 Plugin 'VundleVim/Vundle.vim'
 
 " My Plugins
-Plugin 'vim-scripts/phpfolding.vim'
-Plugin 'vim-scripts/PDV--phpDocumentor-for-Vim'
-Plugin 'vim-scripts/errormarker.vim'
-Plugin 'bpearson/vim-phpcs'
-Plugin 'joonty/vdebug'
-Plugin 'vim-ruby/vim-ruby'
-"Plugin 'ngmy/vim-rubocop'
-"Plugin 'hallettj/jslint.vim'
-Plugin 'Shougo/neocomplete.vim'
-"Plugin 'violetyk/neocomplete-php.vim'
-Plugin 'thinca/vim-ref'
 Plugin 'aklt/plantuml-syntax'
-Plugin 'tpope/vim-fugitive'
-Plugin 'Shougo/vimproc.vim'
+Plugin 'bpearson/vim-phpcs'
+Plugin 'davidhalter/jedi-vim'
+"Plugin 'fatih/vim-go'
+Plugin 'file://'.$HOME.'/usr/local/src/ijaas'
+Plugin 'gregsexton/gitv'
+"Plugin 'hallettj/jslint.vim'
+"Plugin 'jodosha/vim-godebug'
+"Plugin 'joonty/vdebug'
 "Plugin 'm2mdas/phpcomplete-extended'
 "Plugin 'm2mdas/phpcomplete-extended-laravel'
+"Plugin 'ngmy/vim-rubocop'
+Plugin 'posva/vim-vue'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/vimproc.vim'
 "Plugin 'soramugi/auto-ctags.vim'
-Plugin 'gregsexton/gitv'
-"Plugin 'fatih/vim-go'
-"Plugin 'jodosha/vim-godebug'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'StanAngeloff/php.vim'
-Plugin 'file://'.$HOME.'/usr/local/src/ijaas'
+Plugin 'thinca/vim-ref'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/errormarker.vim'
+Plugin 'vim-scripts/PDV--phpDocumentor-for-Vim'
+Plugin 'vim-scripts/phpfolding.vim'
+"Plugin 'violetyk/neocomplete-php.vim'
+Plugin 'xwsoul/vim-zephir'
 
 filetype plugin indent on
 " }}}
@@ -41,8 +43,8 @@ filetype plugin indent on
 " Enable syntax highlighting
 syntax on
 
-" Syntax highlighting until 200 characters
-set synmaxcol=200 " If a large number, Vim slows down with long lines
+" Syntax highlighting until specified characters
+set synmaxcol=256 " If a large number, Vim slows down with long lines
 
 " Display line numbers
 set number
@@ -60,9 +62,9 @@ set hlsearch
 "set cursorline " If enabled, Vim slows down with long lines
 "set cursorcolumn "If enabled, Vim slows down with long lines
 
-" Highlighting more than 80 characters
+" Highlighting more than specified characters
 if exists('&colorcolumn')
-  set colorcolumn=80
+  set colorcolumn=120
 endif
 
 " Display status line
@@ -198,7 +200,7 @@ EOM
 " options
 let g:vdebug_options = {
 \    "port" : 10000,
-\    "server" : '192.168.100.92',
+\    "server" : 'my.lenet-hokan.jp',
 \    "path_maps" : { '/var/app/src': $HOME.'/localrepos/github.com/WHITEPLUS/lenet' },
 \}
 " }}}
