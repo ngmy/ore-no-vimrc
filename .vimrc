@@ -199,9 +199,9 @@ EOM
 
 " options
 let g:vdebug_options = {
-\    "port" : 10000,
-\    "server" : 'my.lenet-hokan.jp',
-\    "path_maps" : { '/var/app/src': $HOME.'/localrepos/github.com/WHITEPLUS/lenet' },
+\    "port" : 9000,
+\    "server" : '127.0.0.1',
+\    "path_maps" : { '/path/to/remote/project': $HOME.'/path/to/local/project' },
 \}
 " }}}
 
