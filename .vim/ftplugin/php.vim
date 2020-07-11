@@ -10,7 +10,7 @@ let php_htmlInStrings=1
 
 " vim-phpcs {{{
 " Coding standard to use
-let Vimphpcs_Standard = 'PSR2'
+let Vimphpcs_Standard = 'PSR12'
 " }}}
 
 " phpDocumentor {{{
