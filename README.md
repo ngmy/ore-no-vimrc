@@ -1,6 +1,6 @@
 # Ore no vimrc
 
-ワシの`.vimrc`は百八式まであるぞ。
+俺の`.vimrc`は百八式まであるぞ。
 
 ## Installation
 
